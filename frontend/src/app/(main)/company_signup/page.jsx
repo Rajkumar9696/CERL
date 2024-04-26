@@ -2,25 +2,28 @@
 import { useFormik } from 'formik';
 import { useRouter } from 'next/navigation';
 
+
 import { enqueueSnackbar } from 'notistack';
 import React from 'react'
 
-const Signup = () => {
+const company_signup = () => {
 
   const router = useRouter()
 
-  const signupForm = useFormik({
+  const companyForm = useFormik({
     initialValues: {
         name: '',
+        industry:'',
+        website:'',
         email: '',
         password: '',
-        cpassword: ""
+        specialties:''
     },
     onSubmit: (values) => {
         console.log(values);
 
         //sending request to backend 
-        fetch('http://localhost:5000/user/add', {
+        fetch('http://localhost:5000/company/add', {
             method: 'POST',
             body: JSON.stringify(values),
             headers: {
@@ -31,7 +34,7 @@ const Signup = () => {
             .then((response) => {
                 console.log(response.status);
                 if (response.status === 200) {
-                    enqueueSnackbar('User added successfully', { variant: 'success' })
+                    enqueueSnackbar('Company added successfully', { variant: 'success' })
                     router.push("/login")
                 } else {
                     enqueueSnackbar('Something went wrong', { variant: 'error' })
@@ -62,7 +65,7 @@ const Signup = () => {
         <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
           Sign in to your account
         </h1>
-        <form className="space-y-4 md:space-y-6" action="#" onSubmit={signupForm.handleSubmit}>
+        <form className="space-y-4 md:space-y-6" action="#" onSubmit={companyForm.handleSubmit}>
           <div>
             <label
               htmlFor="name"
@@ -74,10 +77,46 @@ const Signup = () => {
               type="text"
              
               id="name"
-              value={signupForm.values.name}
-              onChange={signupForm.handleChange}
+              value={companyForm.values.name}
+              onChange={companyForm.handleChange}
               className=" border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             
+              required=""
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="industry"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+             industry_info
+            </label>
+            <input
+              type="industry"
+              name="industry"
+              id="industry"
+              value={companyForm.values.industry}
+              onChange={companyForm.handleChange}
+             
+              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required=""
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="String"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+             website
+            </label>
+            <input
+              type="website"
+              name="website"
+              id="website"
+              value={companyForm.values.website}
+              onChange={companyForm.handleChange}
+             
+              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               required=""
             />
           </div>
@@ -92,8 +131,8 @@ const Signup = () => {
               type="email"
              
               id="email"
-              value={signupForm.values.email}
-              onChange={signupForm.handleChange}
+              value={companyForm.values.email}
+              onChange={companyForm.handleChange}
               className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
              
               required=""
@@ -107,11 +146,10 @@ const Signup = () => {
              Password
             </label>
             <input
-              type="text"
-              
+              type="password"
               id="password"
-              value={signupForm.values.password}
-              onChange={signupForm.handleChange}
+              value={companyForm.values.password}
+              onChange={companyForm.handleChange}
               className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
              
               required=""
@@ -119,22 +157,22 @@ const Signup = () => {
           </div>
           <div>
             <label
-              htmlFor="password"
+              htmlFor="name"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Password
+             specialties
             </label>
             <input
-              type="cpassword"
-              name="cpassword"
-              id="cpassword"
-              value={signupForm.values.cpassword}
-              onChange={signupForm.handleChange}
-             
-              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              type="specialties"
+              id="specialties"
+              value={companyForm.values.specialties}
+              onChange={companyForm.handleChange}
+              className=" border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            
               required=""
             />
           </div>
+      
           <div className="flex items-center justify-between">
             <div className="flex items-start">
               <div className="flex items-center h-5">
@@ -178,4 +216,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default company_signup
