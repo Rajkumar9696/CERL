@@ -16,8 +16,7 @@ const company_signup = () => {
         industry:'',
         website:'',
         email: '',
-        password: '',
-        specialties:''
+        specialities:''
     },
     onSubmit: (values) => {
         console.log(values);
@@ -35,7 +34,7 @@ const company_signup = () => {
                 console.log(response.status);
                 if (response.status === 200) {
                     enqueueSnackbar('Company added successfully', { variant: 'success' })
-                    router.push("/login")
+                    // router.push("/login")
                 } else {
                     enqueueSnackbar('Something went wrong', { variant: 'error' })
                 }
@@ -46,8 +45,8 @@ const company_signup = () => {
     }
 })
   return (
-    <div>
-    <section className="">
+    <div className='mt-20'>
+    <section className="mt-20">
   <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
     <a
       href="#"

@@ -7,8 +7,8 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className=" bg-white bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4  ">
     <a
       href="https://flowbite.com/"
       className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -63,7 +63,7 @@ const Navbar = () => {
         <li>
           <Link
             href="/"
-            className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent  md:p-0 "          
+            className="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent  md:p-0 "          
             aria-current="page"
           >
             Home
