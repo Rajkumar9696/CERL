@@ -5,7 +5,7 @@ const Contact = () => {
   return (
 
 
-<div className=" bg-white text-black font-sans bg-gray-900  mt-20">
+    <div className=" bg-white text-black font-sans bg-gray-900 mt-20">
       <div className="container mx-auto py-12 px-4 bg-light  ">
         <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

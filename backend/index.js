@@ -7,6 +7,7 @@ const cors = require("cors")
 
  const UserRouter = require("./router/userRouter")
  const CompanyRouter = require("./router/companyRouter")
+ const VacancyRouter = require("./router/vacancyRouter")
 
 
  app.use(express.json());
@@ -16,6 +17,7 @@ const cors = require("cors")
 
  app.use("/user", UserRouter);
  app.use("/company", CompanyRouter);
+ app.use("/vacancy", VacancyRouter);
 
  app.listen(port,() => {
     console.log("Server Started");

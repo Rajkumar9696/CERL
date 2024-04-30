@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Model = require('../model/companyVacancy');
+const Model = require('../model/vacancyModel');
 
 router.post('/add', (req, res) => {
     console.log(req.body);
@@ -53,8 +53,6 @@ router.post("/authenticate", (req, res) => {
         });
 });
 
-// getall
-// update
-// delete
+
 
 module.exports = router;
