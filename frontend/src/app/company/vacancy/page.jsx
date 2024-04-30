@@ -69,7 +69,7 @@ const Vacancy = () => {
                                                     />
                                                 </div>
                                                 <div className="flex-1 min-w-0 ms-4">
-                                                    <Link href={"#"} className="text-lg font-medium text-gray-900 hover:text-blue-500 truncate ">
+                                                    <Link href={"/company/view-vacancy/" +vac._id} className="text-lg font-medium text-gray-900 hover:text-blue-500 truncate ">
                                                         {vac.title}
                                                     </Link>
                                                     <p className="text-sm text-gray-500 truncate dark:text-gray-400">
