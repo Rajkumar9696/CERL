@@ -17,7 +17,6 @@ const Template = ({ children }) => {
             autoHideDuration={1000}
         >
             <div>
-                <Navbar/>
                 {children}
             </div>
         </SnackbarProvider>

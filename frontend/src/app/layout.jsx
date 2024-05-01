@@ -10,9 +10,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-white">
       <body className={inter.className}>{children}
-      <script src="../path/to/flowbite/dist/flowbite.js"></script>
+        <script src="../path/to/flowbite/dist/flowbite.js"></script>
       </body>
     </html>
   );

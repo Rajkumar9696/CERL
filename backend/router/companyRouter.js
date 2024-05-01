@@ -22,10 +22,6 @@ router.get('/getall', (req, res) => {
         });
 });
 
-router.put('/update', (req, res) => {
-    res.send('post update response');
-})
-
 router.delete('/delete/:id', (req, res) => {
     Model.findByIdAndDelete(req.params.id)
         .then((result) => {
@@ -36,12 +32,12 @@ router.delete('/delete/:id', (req, res) => {
 });
 
 router.post("/authenticate", (req, res) => {
-    Model.find({})
+    Model.findOne()
         .then((result) => {
             if (result) {
                 res.json(result)
             } else {
-                res.status(401).json({ message: "invalide credential" })
+                res.status(401).json({ message: "invalid credential" })
             }
         }).catch((err) => {
             res.status(500).json(err)
