@@ -8,7 +8,8 @@ const cors = require("cors")
  const UserRouter = require("./router/userRouter")
  const CompanyRouter = require("./router/companyRouter")
  const VacancyRouter = require("./router/vacancyRouter")
- 
+ const UtilRouter = require("./router/utilRouter")
+ const ContactRouter = require("./router/contactRouter")
 
 
  app.use(express.json());
@@ -19,6 +20,9 @@ const cors = require("cors")
  app.use("/user", UserRouter);
  app.use("/company", CompanyRouter);
  app.use("/vacancy", VacancyRouter);
+ app.use("/util", UtilRouter);
+ app.use("/contact", ContactRouter);
+
 
  app.listen(port,() => {
     console.log("Server Started");

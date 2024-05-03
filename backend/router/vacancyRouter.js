@@ -31,13 +31,19 @@ router.put('/update', (req, res) => {
         });
 });
 
-router.delete('/delete/:id', (req, res) => {
-    Model.findByIdAndDelete(req.params.id)
+router.get("/getbyid/:id", (req, res) => {
+
+    Model.findById(req.params.id)
+
         .then((result) => {
-            res.status(200).json(result);
+            res.json(result);
+
         }).catch((err) => {
+            console.err(err)
             res.status(500).json(err);
         });
 });
+
+
 
 module.exports = router;
