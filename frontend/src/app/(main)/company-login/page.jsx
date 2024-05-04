@@ -50,6 +50,7 @@ const CompanyLogin = () => {
   return (
    
     <form className="max-w-sm mx-auto mt-60" onSubmit={loginForm.handleSubmit}>
+      
       <div className="mb-5">
         <label
           htmlFor="email"
