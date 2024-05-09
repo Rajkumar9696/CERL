@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import PrelineScript from "./PrelineScript";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>{children}
         <script src="../path/to/flowbite/dist/flowbite.js"></script>
       </body>
+      <PrelineScript/>
     </html>
   );
 }

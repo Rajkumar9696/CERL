@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './(main)/navbar'
+import Link from 'next/link'
 
 
 const Home = () => {
@@ -10,80 +11,11 @@ const Home = () => {
   {/* hero - start */}
   <div className="bg-white pb-6 sm:pb-8 lg:pb-12 mt-20">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-      {/* <header className="mb-4 flex items-center justify-between py-4 md:py-8">
-      
-        <a
-          href="/"
-          className="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
-          aria-label="logo"
-        >
-          <svg
-            width={95}
-            height={94}
-            viewBox="0 0 95 94"
-            className="h-auto w-6 text-indigo-500"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-          </svg>
-          Flowrift
-        </a>
-       
-        <nav className="hidden gap-12 lg:flex">
-          <a href="#" className="text-lg font-semibold text-indigo-500">
-            Home
-          </a>
-          <a
-            href="#"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-          >
-            Features
-          </a>
-          <a
-            href="#"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-          >
-            Pricing
-          </a>
-          <a
-            href="#"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-          >
-            About
-          </a>
-        </nav>
-       
-        <a
-          href="#"
-          className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
-        >
-          Contact Sales
-        </a>
-        <button
-          type="button"
-          className="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clipRule="evenodd"
-            />
-          </svg>
-          Menu
-        </button>
-      
-      </header> */}
+    
       <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
         {/* image - start */}
         <img
-          src="https://images.unsplash.com/photo-1618004652321-13a63e576b80?auto=format&q=75&fit=crop&w=1500"
+          src="https://www.shutterstock.com/image-photo/male-mature-caucasian-ceo-businessman-600nw-2142010187.jpg"
           loading="lazy"
           alt="Photo by Fakurian Design"
           className="absolute inset-0 h-full w-full object-cover object-center"
@@ -95,24 +27,19 @@ const Home = () => {
         {/* text start */}
         <div className="relative flex flex-col items-center p-4 sm:max-w-xl ">
           <p className="mb-4 text-center text-lg text-indigo-200 sm:text-xl md:mb-8">
-            Very proud to introduce
+         
           </p>
-          <h1 className="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">
-            Revolutionary way to build the web
+          <h1 className="mb-8 text-center text-xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">
+           Corporate Employee Recruitment League
           </h1>
           <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
-            <a
-              href="#"
+            <Link
+              href="/login"
               className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
             >
               Start now
-            </a>
-            <a
-              href="#"
-              className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
-            >
-              Take tour
-            </a>
+            </Link>
+          
           </div>
         </div>
         {/* text end */}
@@ -124,7 +51,7 @@ const Home = () => {
   <div className="bg-white py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
       <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">
-        Gallery
+        Company
       </h2>
       <div className="mb-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:mb-8 md:grid-cols-4 md:gap-6 xl:gap-8">
         {/* image - start */}
@@ -133,14 +60,14 @@ const Home = () => {
           className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
         >
           <img
-            src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+            src="https://listcarbrands.com/wp-content/uploads/2016/03/Land-Rover-Logo.jpg"
             loading="lazy"
             alt="Photo by Minh Pham"
             className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
           <span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-            VR
+            Land Rover
           </span>
         </a>
         {/* image - end */}
@@ -150,14 +77,14 @@ const Home = () => {
           className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
         >
           <img
-            src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=600"
+            src="https://th.bing.com/th/id/OIP.-Bg9l2_fcbANiDvVaU37HQHaEK?rs=1&pid=ImgDetMain"
             loading="lazy"
             alt="Photo by Magicle"
             className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
           <span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-            Tech
+            
           </span>
         </a>
         {/* image - end */}
@@ -167,7 +94,7 @@ const Home = () => {
           className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
         >
           <img
-            src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=600"
+            src="https://th.bing.com/th/id/R.fa45f5ac8454de7d08ff460e1ba45ede?rik=udv5DsF7dTqwow&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2016%2f02%2fgoogle-headerquarters-sign-hq-logo-name.jpg&ehk=oQl2hSQA3VXlLQZkftr3uk%2fYTZtrl%2bLmgssOUWK4mgk%3d&risl=&pid=ImgRaw&r=0"
             loading="lazy"
             alt="Photo by Martin Sanchez"
             className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -184,7 +111,7 @@ const Home = () => {
           className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
         >
           <img
-            src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+            src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-10/24/full/1571866204-6676.jpg?im=FeatureCrop,size=(826,465)"
             loading="lazy"
             alt="Photo by Lorenzo Herrera"
             className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -197,17 +124,7 @@ const Home = () => {
         {/* image - end */}
       </div>
       <div className="flex items-start justify-between gap-8 sm:items-center">
-        <p className="max-w-screen-sm text-sm text-gray-500 lg:text-base">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text.
-        </p>
-        <a
-          href="#"
-          className="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base"
-        >
-          More
-        </a>
+      
       </div>
     </div>
   </div>
@@ -220,11 +137,7 @@ const Home = () => {
         <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
           Our Team by the numbers
         </h2>
-        <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text but is random or otherwise generated.
-        </p>
+       
       </div>
       {/* text - end */}
       <div className="grid grid-cols-2 gap-6 rounded-lg bg-indigo-500 p-6 md:grid-cols-4 md:gap-8 md:p-8">
@@ -756,7 +669,7 @@ const Home = () => {
         {/* image - start */}
         <div className="order-first h-48 w-full bg-gray-300 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
           <img
-            src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&q=75&fit=crop&w=1000"
+            src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?size=338&ext=jpg&ga=GA1.1.553209589.1714694400&semt=ais"
             loading="lazy"
             alt="Photo by Andras Vas"
             className="h-full w-full object-cover object-center"
@@ -774,12 +687,12 @@ const Home = () => {
             text.
           </p>
           <div className="mt-auto">
-            <a
-              href="#"
+            <Link
+              href="/contact"
               className="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"
             >
               Contact support
-            </a>
+            </Link>
           </div>
         </div>
         {/* content - end */}
@@ -789,25 +702,9 @@ const Home = () => {
   {/* call to action - end */}
   {/* footer - start */}
   <footer className="bg-white">
-    <div className="bg-indigo-500 py-6">
+    <div className=" py-6">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
-          <div className="mb-3 text-center md:mb-0 md:text-left">
-            <span className="font-bold uppercase tracking-widest text-gray-100">
-              Newsletter
-            </span>
-            <p className="text-indigo-200">Subscribe to our newsletter</p>
-          </div>
-          <form className="flex w-full gap-2 md:max-w-md">
-            <input
-              placeholder="Email"
-              className="w-full flex-1 rounded border border-white bg-indigo-400 px-3 py-2 text-white placeholder-indigo-100 outline-none ring-indigo-300 transition duration-100 focus:ring"
-            />
-            <button className="inline-block rounded bg-white px-8 py-2 text-center text-sm font-semibold text-indigo-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:text-indigo-600 md:text-base">
-              Send
-            </button>
-          </form>
-        </div>
+      
       </div>
     </div>
     <div className="pt-12 lg:pt-16">
@@ -821,7 +718,7 @@ const Home = () => {
                 className="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
                 aria-label="logo"
               >
-                <svg
+                {/* <svg
                   width={95}
                   height={94}
                   viewBox="0 0 95 94"
@@ -830,24 +727,21 @@ const Home = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-                </svg>
-                Flowrift
+                </svg> */}
+               CERL
               </a>
             </div>
             {/* logo - end */}
-            <p className="mb-6 text-gray-500 sm:pr-8">
-              Filler text is dummy text which has no meaning however looks very
-              similar to real text
-            </p>
+           
             {/* social - start */}
-            <div className="flex gap-4">
+            <div className="flex gap-4 ">
               <a
                 href="#"
                 target="_blank"
                 className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-5 w-5 text-black"
                   width={24}
                   height={24}
                   viewBox="0 0 24 24"
@@ -863,7 +757,7 @@ const Home = () => {
                 className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-5 w-5  text-black"
                   width={24}
                   height={24}
                   viewBox="0 0 24 24"
@@ -879,7 +773,7 @@ const Home = () => {
                 className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-5 w-5  text-black"
                   width={24}
                   height={24}
                   viewBox="0 0 24 24"
@@ -895,7 +789,7 @@ const Home = () => {
                 className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-5 w-5  text-black"
                   width={24}
                   height={24}
                   viewBox="0 0 24 24"
@@ -910,14 +804,14 @@ const Home = () => {
           </div>
           {/* nav - start */}
           <div>
-            <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+            <div className="mb-4 font-bold uppercase tracking-widest text-black">
               Products
             </div>
             <nav className="flex flex-col gap-4">
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Overview
                 </a>
@@ -925,7 +819,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Solutions
                 </a>
@@ -933,7 +827,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Pricing
                 </a>
@@ -941,7 +835,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Customers
                 </a>
@@ -951,14 +845,14 @@ const Home = () => {
           {/* nav - end */}
           {/* nav - start */}
           <div>
-            <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+            <div className="mb-4 font-bold uppercase tracking-widest text-black">
               Company
             </div>
             <nav className="flex flex-col gap-4">
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   About
                 </a>
@@ -966,7 +860,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Investor Relations
                 </a>
@@ -974,7 +868,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Jobs
                 </a>
@@ -982,7 +876,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Press
                 </a>
@@ -990,7 +884,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Blog
                 </a>
@@ -1000,14 +894,14 @@ const Home = () => {
           {/* nav - end */}
           {/* nav - start */}
           <div>
-            <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+            <div className="mb-4 font-bold uppercase tracking-widest text-black">
               Support
             </div>
             <nav className="flex flex-col gap-4">
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Contact
                 </a>
@@ -1015,7 +909,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Documentation
                 </a>
@@ -1023,7 +917,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Chat
                 </a>
@@ -1031,7 +925,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   FAQ
                 </a>
@@ -1041,14 +935,14 @@ const Home = () => {
           {/* nav - end */}
           {/* nav - start */}
           <div>
-            <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+            <div className="mb-4 font-bold uppercase tracking-widest text-black">
               Legal
             </div>
             <nav className="flex flex-col gap-4">
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Terms of Service
                 </a>
@@ -1056,7 +950,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Privacy Policy
                 </a>
@@ -1064,7 +958,7 @@ const Home = () => {
               <div>
                 <a
                   href="#"
-                  className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  className="text-black-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                 >
                   Cookie settings
                 </a>
@@ -1073,8 +967,9 @@ const Home = () => {
           </div>
           {/* nav - end */}
         </div>
-        <div className="border-t py-8 text-center text-sm text-gray-400">
-          © 2021 - Present Flowrift. All rights reserved.
+        <hr />
+        <div className="border-t py-8 text-center text-sm text-black">
+          © 2024 - Present CERL. All rights reserved.
         </div>
       </div>
     </div>

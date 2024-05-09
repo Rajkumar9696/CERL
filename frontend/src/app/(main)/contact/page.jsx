@@ -42,6 +42,13 @@ const Contact = () => {
     }
   })
   return (
+    <div className=''  style={{ 
+      backgroundImage: "url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwindowsreport.com%2Fdownload-4k-themes-windows-10%2F&psig=AOvVaw2QFxCa5Iu0DwJe4YhYyNc-&ust=1715071909332000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjyg_HS-IUDFQAAAAAdAAAAABAE')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed'
+  }}>   
+    
     <div>
       <section className=" mt-10 bg-white dark:bg-gray-900">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -107,8 +114,9 @@ const Contact = () => {
           </form>
         </div>
       </section>
-
-    </div>
+      </div>
+    
+  </div>  
   )
 }
 

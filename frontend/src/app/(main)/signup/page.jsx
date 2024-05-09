@@ -43,7 +43,12 @@ const Signup = () => {
     }
   })
   return (
-    <div className=''>
+    <div className=''  style={{ 
+      backgroundImage: "url('https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg?w=1060&t=st=1714880025~exp=1714880625~hmac=da62b6c52b64b140a5cd7bbd950d64d4a751fec9870a7f2627f84e22016d135a')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed'
+  }}>
       <section className="">
         <div className="  flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           {/* <a

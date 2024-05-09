@@ -50,7 +50,12 @@ const Login = () => {
   })
 
   return (
-  <div className=''>
+<div className='' style={{ 
+    backgroundImage: "url('https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg?w=1060&t=st=1714880025~exp=1714880625~hmac=da62b6c52b64b140a5cd7bbd950d64d4a751fec9870a7f2627f84e22016d135a')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+}} >
     <div className="  flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           {/* <a
             href="#"
@@ -63,7 +68,7 @@ const Login = () => {
             />
             CERL
           </a> */}
-          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700" >
             <div className=" shadow-lg  p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 User-Login

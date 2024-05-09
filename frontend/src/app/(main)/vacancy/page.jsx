@@ -25,7 +25,8 @@ const Vacancy = () => {
         const inputText = e.target.value;
 
         setvacancyList(masterList.filter((vacancy) => {
-            return vacancy.title.toLowerCase().includes(inputText.toLowerCase());
+            return vacancy.title.toLowerCase().includes(inputText.toLowerCase()),
+            vacancy.location.toLowerCase().includes(inputText.toLowerCase());
         }));
     }
 
@@ -33,12 +34,12 @@ const Vacancy = () => {
         <div>
             <div className="container">
                 <div className='flex'>
-                    <label className="ms-20 mt-20 input input-bordered flex items-center gap-2 w-full max-w-sm" for="title">
-                        <input onChange={applySearch} type="text" className="grow " placeholder="Search Title" id='title' name='title' />
+                    <label className="ms-20 mt-20 input input-bordered flex items-center gap-2 w-full max-w-sm" for="ctitle">
+                        <input onChange={applySearch} type="text" className="grow " placeholder="Search Title" id='ctitle' name='ctitle' />
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
                     </label>
                     <label className="ms-10 mt-20 input input-bordered flex items-center gap-2 w-full max-w-sm" for='location'>
-                        <input type="text" className="grow " placeholder="Search Location" id='location' name='location' />
+                        <input  onChange={applySearch} type="text" className="grow " placeholder="Search Location" id='location' name='location' />
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
                     </label>
                 </div>

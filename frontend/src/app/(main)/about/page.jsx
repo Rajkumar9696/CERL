@@ -2,25 +2,44 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="font-sans dark:bg-gray-900 text-black  mt-20">
-    <div className="container mx-auto py-12 px-4">
-      <h1 className="text-4xl font-bold mb-8">About Us</h1>
-      <p className="text-lg text-gray-700 leading-relaxed text-black">Corporate recruitment leagues represent a novel approach to talent acquisition, where companies engage in friendly competition to attract top talent. These leagues serve as platforms for companies to showcase their employer brand, culture, and job opportunities, while also providing job seekers with valuable insights and networking opportunities.
-
-One of the key aspects of corporate recruitment leagues is their diverse format. They can take the shape of competitions, challenges, or collaborative events, with tasks ranging from problem-solving exercises to job-related skill assessments. This diversity allows companies to highlight different aspects of their organizational culture and values, capturing the attention of potential recruits from various backgrounds and skill sets.
-
-Participation in these leagues is open to companies of all sizes and industries, creating a rich ecosystem of employers. Established corporations and startups alike can benefit from the exposure and networking opportunities provided by these events. For participating companies, the benefits are manifold. They gain increased brand visibility, access to a pool of top talent, and opportunities for collaboration and partnerships within the industry.
-
-Job seekers also stand to gain from their involvement in corporate recruitment leagues. They are exposed to a wide array of companies, learning about their cultures, values, and job opportunities. Participation in challenges and competitions offers them opportunities for skill development and learning, while networking with recruiters, professionals, and peers can expand their professional connections and career prospects.
-
-Evaluation criteria for corporate recruitment leagues typically include recruitment strategies, employer branding efforts, engagement with participants, and the overall quality of job opportunities offered. Successful participation in these leagues can lead to increased awareness of participating companies, successful talent acquisitions, and strengthened industry relationships.
-
-In today's tech-driven world, technology plays a crucial role in facilitating corporate recruitment leagues. Virtual platforms and tools are commonly used to streamline the recruitment process, enhance communication, and reach a wider audience.
-
-In conclusion, corporate recruitment leagues provide a dynamic platform for companies to showcase their employer brand and attract top talent, while offering job seekers valuable insights and opportunities for professional growth. Through friendly competition and collaboration, these leagues contribute to the enhancement of talent acquisition practices and the overall competitiveness of the corporate landscape.</p>
-      <p className="text-lg text-gray-700 leading-relaxed mt-4 text-black"></p>
+    <div className=''  style={{ 
+      backgroundImage: "url('https://cdn.dribbble.com/users/29723/screenshots/15416560/media/177382d8afdf016d96fe9a70e22adad0.png?resize=1000x750&vertical=center')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed'
+  }}>
+<section className="bg-gray-100 mt-10">
+  <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+      <div className="max-w-lg">
+        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          About Us
+        </h2>
+        <p className="mt-4 text-gray-600 text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros
+          at lacus feugiat hendrerit sed ut tortor. Suspendisse et magna quis
+          elit efficitur consequat. Mauris eleifend velit a pretium iaculis.
+          Donec sagittis velit et magna euismod, vel aliquet nulla malesuada.
+          Nunc pharetra massa lectus, a fermentum arcu volutpat vel.
+        </p>
+        <div className="mt-8">
+          <a href="#" className="text-blue-500 hover:text-blue-600 font-medium">
+            Learn more about us
+            <span className="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+      <div className="mt-12 md:mt-0">
+        <img
+          src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
+          alt="About Us Image"
+          className="object-cover rounded-lg shadow-md"
+        />
+      </div>
     </div>
   </div>
+</section>
+</div>
   )
 }
 

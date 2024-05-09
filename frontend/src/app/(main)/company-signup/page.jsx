@@ -46,6 +46,12 @@ const company_signup = () => {
     }
   })
   return (
+  <div  className='' style={{ 
+    backgroundImage: "url('https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg?w=1060&t=st=1714880025~exp=1714880625~hmac=da62b6c52b64b140a5cd7bbd950d64d4a751fec9870a7f2627f84e22016d135a')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+}}> 
     <div style={{marginTop:"100px"}}>
       <section className="mt-20">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -180,8 +186,12 @@ const company_signup = () => {
                   </Link> */}
                 </div>
                 <div className='text-center '>
-                  <button type="submit" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Sign Up</button>
-                  <button type="submit" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Login</button>
+                  <button type="submit" class=" w-full focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2 me-2 mb-1 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Sign Up</button>
+                
+                </div>
+                <div className='text-center '>
+                  <Link type="submit" href={"/company-login"} class=" w-full focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2 me-2  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Login</Link>
+                
                 </div>
               
               </form>
@@ -190,6 +200,7 @@ const company_signup = () => {
         </div>
       </section>
     </div>
+  </div>  
   )
 }
 
