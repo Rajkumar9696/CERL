@@ -42,16 +42,13 @@ const Contact = () => {
     }
   })
   return (
-    <div className=''  style={{ 
-      backgroundImage: "url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwindowsreport.com%2Fdownload-4k-themes-windows-10%2F&psig=AOvVaw2QFxCa5Iu0DwJe4YhYyNc-&ust=1715071909332000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjyg_HS-IUDFQAAAAAdAAAAABAE')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed'
-  }}>   
     
     <div>
-      <section className=" mt-10 bg-white dark:bg-gray-900">
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <section className=" mt-10  dark:bg-gray-900  " style={{ 
+      backgroundImage: "url('https://t3.ftcdn.net/jpg/03/55/60/70/240_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg')",
+      
+  }} >
+        <div className="  p-20 bg-white rounded-lg shadow  mx-auto max-w-screen-md bg-gray-400   "  >
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
             Contact Us
           </h2>
@@ -116,7 +113,7 @@ const Contact = () => {
       </section>
       </div>
     
-  </div>  
+    
   )
 }
 

@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 const Home = () => {
   return (
-    <div>
+  <div >
     <Navbar />
-    <>
-  {/* hero - start */}
-  <div className="bg-white pb-6 sm:pb-8 lg:pb-12 mt-20">
+    
+
+  <div className="bg-white w-full pb-6 sm:pb-8 lg:pb-12 mt-20">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
     
       <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
@@ -84,7 +84,7 @@ const Home = () => {
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
           <span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-            
+            Microsoft
           </span>
         </a>
         {/* image - end */}
@@ -101,7 +101,7 @@ const Home = () => {
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
           <span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-            Dev
+            Google
           </span>
         </a>
         {/* image - end */}
@@ -975,9 +975,10 @@ const Home = () => {
     </div>
   </footer>
   {/* footer - end */}
-</>
 
-    </div>
+
+  
+</div>  
  
   
   

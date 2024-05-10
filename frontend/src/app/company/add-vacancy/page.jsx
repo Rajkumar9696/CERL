@@ -1,6 +1,7 @@
 'use client';
 import { useFormik } from 'formik';
 import { enqueueSnackbar } from 'notistack';
+
 import React from 'react'
 
 const AddVacancy = () => {
@@ -45,9 +46,11 @@ const AddVacancy = () => {
   })
 
   return (
-    <div className='bg-image- ' >
-     <div className=''>
-      <section className="bg-white dark:bg-gray-900 ">
+    
+    <div >
+    
+     
+      <section className="bg-white dark:bg-gray-900  "  >
         <div className="py-8 px-4 mx-auto max-w-2xl lg:py-16 my-5   bg-gradient-to-r from-sky-500 to-indigo-500">
           <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-white text-center">
             Add vacancy
@@ -207,7 +210,7 @@ const AddVacancy = () => {
 
 
     </div>  
-    </div>
+    
 
   )
 }

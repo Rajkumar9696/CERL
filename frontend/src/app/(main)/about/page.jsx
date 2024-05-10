@@ -2,13 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className=''  style={{ 
-      backgroundImage: "url('https://cdn.dribbble.com/users/29723/screenshots/15416560/media/177382d8afdf016d96fe9a70e22adad0.png?resize=1000x750&vertical=center')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed'
-  }}>
-<section className="bg-gray-100 mt-10">
+    
+
+<div className='' style={{ 
+      backgroundImage: "url('https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg')"}}>
+  <section className="bg-gray-100 mt-10"   >
   <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
       <div className="max-w-lg">
@@ -39,7 +37,9 @@ const About = () => {
     </div>
   </div>
 </section>
-</div>
+</div>    
+
+
   )
 }
 
