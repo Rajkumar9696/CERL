@@ -19,7 +19,7 @@ const ViewVacancy = () => {
     useEffect(() => {
         getVacancyData();
 
-    })
+    },[])
 
 
     return (

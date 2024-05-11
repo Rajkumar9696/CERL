@@ -2,13 +2,44 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="font-sans dark:bg-gray-900 text-black  mt-20">
-    <div className="container mx-auto py-12 px-4">
-      <h1 className="text-4xl font-bold mb-8">About Us</h1>
-      <p className="text-lg text-gray-700 leading-relaxed text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget urna auctor, tempor nisi vel, rhoncus velit. Donec auctor tortor felis, a lacinia justo pharetra nec. Sed et hendrerit odio, ac tincidunt metus. Nulla facilisi. Vivamus pulvinar risus sit amet odio rutrum, ac dictum lacus vestibulum. Nullam at dui semper, vestibulum ligula vel, vestibulum ligula.</p>
-      <p className="text-lg text-gray-700 leading-relaxed mt-4 text-black">Fusce auctor justo et lectus dignissim, ut efficitur quam tempus. Sed interdum neque vitae elit cursus eleifend. Ut nec metus vel eros accumsan accumsan vel id elit. Phasellus ut elit nec justo blandit fermentum. Donec at bibendum tortor, sed faucibus ex. Vestibulum a enim velit. Vestibulum tempus auctor nisl, eu iaculis velit. Vestibulum non odio ac ex convallis iaculis. Nullam non purus vitae odio venenatis efficitur.</p>
+    
+
+<div className='' style={{ 
+      backgroundImage: "url('https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg')"}}>
+  <section className="bg-gray-100 mt-10"   >
+  <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+      <div className="max-w-lg">
+        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          About Us
+        </h2>
+        <p className="mt-4 text-gray-600 text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros
+          at lacus feugiat hendrerit sed ut tortor. Suspendisse et magna quis
+          elit efficitur consequat. Mauris eleifend velit a pretium iaculis.
+          Donec sagittis velit et magna euismod, vel aliquet nulla malesuada.
+          Nunc pharetra massa lectus, a fermentum arcu volutpat vel.
+        </p>
+        <div className="mt-8">
+          <a href="#" className="text-blue-500 hover:text-blue-600 font-medium">
+            Learn more about us
+            <span className="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+      <div className="mt-12 md:mt-0">
+        <img
+          src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
+          alt="About Us Image"
+          className="object-cover rounded-lg shadow-md"
+        />
+      </div>
     </div>
   </div>
+</section>
+</div>    
+
+
   )
 }
 

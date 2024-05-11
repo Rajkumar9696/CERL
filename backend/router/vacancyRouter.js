@@ -23,33 +23,11 @@ router.get('/getall', (req, res) => {
 });
 
 router.put('/update', (req, res) => {
-  Model.findByIdAndUpdate(req.params.id)
-  .then((result) => {
-    res.status(200).json(result);
-  }).catch((err) => {
-    res.status(500).json(err);
-  });
-});
-
-router.delete('/delete/:id', (req, res) => {
-   Model.findByIdAndDelete(req.params.id)
-   .then((result) => {
-    res.status(200).json(result);
-   }).catch((err) => {
-    res.status(500).json(err);
-   });
-});
-
-router.post("/authenticate", (req, res) => {
-    Model.find({})
+    Model.findByIdAndUpdate(req.params.id)
         .then((result) => {
-            if (result) {
-                res.json(result)
-            } else {
-                res.status(401).json({ message: "invalide credential" })
-            }
+            res.status(200).json(result);
         }).catch((err) => {
-            res.status(500).json(err)
+            res.status(500).json(err);
         });
 });
 
