@@ -40,6 +40,8 @@ const ViewVacancy = () => {
                             <span>{vacancyList.description}</span>
                             <p className='mt-3 font-bold'>Requirement</p>
                             <span>{vacancyList.requirements}</span>
+                            <p className='mt-3 font-bold'>Experience</p>
+                            <span>{vacancyList.experience}</span>
                             <p className='mt-3 font-bold'>Responsibilities</p>
                             <span>{vacancyList.responsibilities}</span>
                         </form>
