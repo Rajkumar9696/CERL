@@ -44,7 +44,7 @@ const Contact = () => {
   return (
 
     <div className=''>
-      <section className=" h-dvh mt-10 bg-white dark:bg-gray-900">
+      <section className=" h-dvh mt-10 bg-white dark:bg-gray-900" style = {{backgroundImage: "url('https://www.sss-solutions.org/wp-content/uploads/2018/01/1116146294-login-page-background-image-112.jpg')"}}>
 
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">

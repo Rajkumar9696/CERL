@@ -5,7 +5,7 @@ const mySchema = new Schema({
  name: {type: String, request: true},
     email: {type: String, request: true, unique: true},
     
-    avatar: {type: String, default: 'avatar_placeholder.png'},
+    avatar: {type: String, default: 'avatar.png'},
     password: {type:String},
    
     role: {type: String, default:'user'},

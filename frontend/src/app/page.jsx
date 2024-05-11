@@ -10,19 +10,19 @@ const Home = () => {
     
 
   <div className=" w-full pb-6 sm:pb-8 lg:pb-12 mt-20">
-    <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+    <div className="mx-auto  px-4 md:px-8">
     
-      <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
+      <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg  py-16 shadow-lg md:py-20 xl:py-48">
         {/* image - start */}
         <img
-          src="https://www.shutterstock.com/image-photo/male-mature-caucasian-ceo-businessman-600nw-2142010187.jpg"
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ycG9yYXRlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D"
           loading="lazy"
           alt="Photo by Fakurian Design"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         {/* image - end */}
         {/* overlay - start */}
-        <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
+        <div className="" />
         {/* overlay - end */}
         {/* text start */}
         <div className="relative flex flex-col items-center p-4 sm:max-w-xl ">
@@ -46,8 +46,7 @@ const Home = () => {
       </section>
     </div>
   </div>
-  {/* hero - end */}
-  {/* gallery - start */}
+  
   <div className="bg-white py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
       <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">
