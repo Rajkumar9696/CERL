@@ -20,7 +20,7 @@ const Feedback = () => {
           rating.values= rating
     
           //sending request to backend 
-          fetch('http://localhost:5000/contact/add', {
+          fetch('http://localhost:5000/feedback/add', {
             method: 'POST',
             body: JSON.stringify(values),
             headers: {

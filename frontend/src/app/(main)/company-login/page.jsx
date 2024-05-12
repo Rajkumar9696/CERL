@@ -41,7 +41,7 @@ const Login = () => {
         })
         .then((data) => {
           sessionStorage.setItem('user', JSON.stringify(data));
-          router.push("/")
+          router.push("/company/dashboard")
         })
         .catch(err => {
           enqueueSnackbar('Something went wrong', { variant: 'error' })

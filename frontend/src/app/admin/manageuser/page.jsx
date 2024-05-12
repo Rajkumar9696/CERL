@@ -101,9 +101,9 @@ const ManageUser = () => {
 
   return (
     <div >
-      <div className="flex flex-col my-10 bg-white ">
-        <div className="-m-1.5 overflow-x-auto">
-          <div className="p-1.5 min-w-full inline-block align-middle ">
+      <div className="flex flex-col my-5 bg-white ">
+        <div className=" overflow-x-auto me-10">
+          <div className=" min-w-full inline-block align-middle ">
             <div className="overflow-hidden">
               {
                 displayUser()

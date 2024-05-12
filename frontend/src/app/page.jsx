@@ -9,7 +9,7 @@ const Home = () => {
     <Navbar />
     
 
-  <div className=" w-full pb-6 sm:pb-8 lg:pb-12 mt-20">
+  <div className=" w-full  pb-6 sm:pb-8 lg:pb-12 mt-20">
     <div className="mx-auto  px-4 md:px-8">
     
       <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg  py-16 shadow-lg md:py-20 xl:py-48">
@@ -976,8 +976,8 @@ const Home = () => {
   {/* footer - end */}
 
 
-  
-</div>  
+  </div>  
+   
  
   
   
