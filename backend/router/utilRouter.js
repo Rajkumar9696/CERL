@@ -2,7 +2,7 @@ const multer = require('multer');
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
-// require('dotenv').config();
+
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {

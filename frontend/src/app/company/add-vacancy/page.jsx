@@ -15,7 +15,7 @@ const AddVacancy = () => {
       experience: "",
       requirements: "",
       qualification: "",
-      employmentType: "",
+      employmentType:  "",
       responsibilities: ""
     },
     onSubmit: (values) => {
@@ -51,7 +51,7 @@ const AddVacancy = () => {
     
      
       <section className="bg-white dark:bg-gray-900 ">
-        <div className="py-8 px-4 max-w-2xl     bg-gradient-to-r from-violet-500 to-fuchsia-500">
+        <div className="py-8 px-4 max-w-2xl     bg-gradient-to-r from-violet-200 to-fuchsia-200">
           <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-white text-center">
             Add vacancy
           </h2>

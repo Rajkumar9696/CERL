@@ -56,7 +56,7 @@ const Sidebar = () => {
               href="#"
               aria-label="Brand"
             >
-              Brand
+              Company
             </a>
           </div>
           <nav

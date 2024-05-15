@@ -10,7 +10,7 @@ import React from 'react';
 
 const Login = () => {
 
-  const {setLoggedIn, setCurrentuser} = useUserContext();
+  const {setLoggedIn, setCurrentUser} = useUserContext();
 
   const router = useRouter()
 
@@ -46,7 +46,7 @@ const Login = () => {
           router.push("/vacancy")
           sessionStorage.setItem('user', JSON.stringify(data));
           setLoggedIn(true)
-          setCurrentuser(data)
+          setCurrentUser(data)
         })
         .catch(err => {
           enqueueSnackbar('Something went wrong', { variant: 'error' })
