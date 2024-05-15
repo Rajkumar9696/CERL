@@ -8,7 +8,7 @@ const mySchema = new Schema({
     website:{type:String},
     // avatar: {type: String, default: 'avatar_placeholder.png'},
     password: {type:String},
-    specialities: {type:String},
+    
   
     createdAt:{
         type:Date,

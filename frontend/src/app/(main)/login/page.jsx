@@ -1,4 +1,5 @@
 'use client'
+import useUserContext from '@/app/context/UserContext';
 import { useFormik } from 'formik';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -8,6 +9,8 @@ import React from 'react';
 
 
 const Login = () => {
+
+  const {setLoggedIn, setCurrentuser} = useUserContext();
 
   const router = useRouter()
 
@@ -40,8 +43,10 @@ const Login = () => {
           }
         })
         .then((data) => {
+          router.push("/vacancy")
           sessionStorage.setItem('user', JSON.stringify(data));
-          router.push("/")
+          setLoggedIn(true)
+          setCurrentuser(data)
         })
         .catch(err => {
           enqueueSnackbar('Something went wrong', { variant: 'error' })

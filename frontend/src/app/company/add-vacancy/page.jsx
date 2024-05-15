@@ -51,12 +51,12 @@ const AddVacancy = () => {
     
      
       <section className="bg-white dark:bg-gray-900 ">
-        <div className="py-8 px-4 mx-auto max-w-2xl lg:py-16 my-5   bg-gradient-to-r from-sky-500 to-indigo-500">
+        <div className="py-8 px-4 max-w-2xl     bg-gradient-to-r from-violet-500 to-fuchsia-500">
           <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-white text-center">
             Add vacancy
           </h2>
           <form action="#" onSubmit={vacancyForm.handleSubmit}>
-            <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
+            <div className="grid gap-4 sm:grid-cols-2 sm:gap-6  ">
               <div className="sm:col-span-2">
                 <label
                   htmlFor="name"

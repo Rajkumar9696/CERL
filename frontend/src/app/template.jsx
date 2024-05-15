@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { SnackbarProvider } from 'notistack';
 import Navbar from './(main)/navbar';
+import { UserProvider } from './context/UserContext';
 
 const Template = ({ children }) => {
 
@@ -13,12 +14,14 @@ const Template = ({ children }) => {
 
     return (
         <SnackbarProvider
-            anchorOrigin={{ vertical: 'center', horizontal: 'right' }}
-            autoHideDuration={1000}
+        anchorOrigin={{ vertical: 'center', horizontal: 'right' }}
+        autoHideDuration={1000}
         >
-            <div>
+            <UserProvider>
+           
                 {children}
-            </div>
+           
+            </UserProvider>
         </SnackbarProvider>
     )
 }

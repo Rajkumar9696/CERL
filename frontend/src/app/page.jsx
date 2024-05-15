@@ -110,7 +110,7 @@ const Home = () => {
           className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
         >
           <img
-            src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-10/24/full/1571866204-6676.jpg?im=FeatureCrop,size=(826,465)"
+            src="https://media.licdn.com/dms/image/D5612AQHNzfiw1FLkiw/article-cover_image-shrink_600_2000/0/1710088621874?e=2147483647&v=beta&t=rs9mG9Bbiwg7kuSOCdr0vBhRfwV5B0Qmg0yj7mXJo9c"
             loading="lazy"
             alt="Photo by Lorenzo Herrera"
             className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"

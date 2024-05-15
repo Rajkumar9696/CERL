@@ -1,10 +1,24 @@
+'use client';
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BiLogOut } from "react-icons/bi";
 
 const Sidebar = () => {
+
+  const [companyList, setCompanyList] = useState([]);
+  const getCompany = async(values) => {
+     console.log(values);
+     const res = await fetch("http://localhost:5000/company/getall")
+     console.log(res.status);
+     const data = await res.json();
+     console.log(data);
+     setCompanyList(data);
+  }
+  useEffect(() => {
+   getCompany()
+  }, [])
   return (
-    <div className=''>
+    <div className=' '>
       <>
         {/* Navigation Toggle */}
         <button
@@ -34,7 +48,7 @@ const Sidebar = () => {
         {/* Sidebar */}
         <div
           id="docs-sidebar"
-          className="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 start-0 bottom-0 z-[60] w-64 bg-white border-e border-gray-200 pt-7 pb-10 overflow-y-auto lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 dark:bg-neutral-800 dark:border-neutral-700  "
+          className="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 start-0 bottom-0 z-[60] w-64 bg-white border-e border-gray-200 pt-7 pb-10 overflow-y-auto lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 dark:bg-neutral-800 dark:border-neutral-700    bg-gradient-to-r from-sky-500 to-indigo-300"
         >
           <div className="px-6">
             <a
@@ -518,14 +532,21 @@ const Sidebar = () => {
                       src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
                       alt="Image Description"
                     />
+                    {
+                      companyList.map((comp) => {
+                        return(
+
                     <div className="ms-3">
                       <h3 className="font-semibold text-gray-800 dark:text-white">
-                        Mark Wanner
+                     {comp.name}
                       </h3>
-                      <p className="text-sm font-medium text-gray-400 dark:text-neutral-500">
-                        mark@gmail.com
+                      <p className="text-sm font-medium  text-gray-800 dark:text-white ">
+                        {comp.email}
                       </p>
                     </div>
+                        )
+                      })
+                    }
                   </div>
                 </div>
 
