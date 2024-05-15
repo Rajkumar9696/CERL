@@ -700,7 +700,7 @@ const Home = () => {
   </div>
   {/* call to action - end */}
   {/* footer - start */}
-  <footer className="bg-white">
+  <footer className="bg-gray-500">
     <div className=" py-6">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
       
