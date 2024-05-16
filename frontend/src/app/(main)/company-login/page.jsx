@@ -87,13 +87,13 @@ const Login = () => {
               </div>
               <div>
                 <label
-                  htmlFor="email"
+                  htmlFor="password"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Password
                 </label>
                 <input
-                  type="text"
+                  type="password"
 
                   id="password"
                   value={loginForm.values.password}
@@ -124,12 +124,12 @@ const Login = () => {
                       </label>
                     </div>
                   </div> */}
-                <Link
+                {/* <Link
                   href="/resetPassword"
                   className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
                   Forgot password?
-                </Link>
+                </Link> */}
               </div>
               <div className='text-center'>
                 <button type="submit" className=" w-full focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Login</button>

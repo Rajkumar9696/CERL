@@ -24,7 +24,7 @@ const ViewVacancy = () => {
 
     return (
         <div>
-            <div className="container mt-20 ms-10">
+            <div className="container mt-20 ms-7 ">
 
                 {
                     vacancyList !== null ? (

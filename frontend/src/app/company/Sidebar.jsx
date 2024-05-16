@@ -66,7 +66,7 @@ const Sidebar = () => {
             <ul className="space-y-1.5">
               <li>
                 <Link
-                  className="flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-700 dark:text-white"
+                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
                   href={"/company/dashboard"}
                 >
                   <svg

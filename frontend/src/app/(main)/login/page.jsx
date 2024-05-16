@@ -90,13 +90,13 @@ const Login = () => {
                 </div>
                 <div>
                   <label
-                    htmlFor="email"
+                    htmlFor=""
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Password
                   </label>
                   <input
-                    type="text"
+                    type="password"
 
                     id="password"
                     value={loginForm.values.password}
