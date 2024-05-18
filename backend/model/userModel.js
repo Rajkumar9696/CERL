@@ -1,15 +1,31 @@
 const { Schema, model } = require('../connection');
 
-const mySchema = new Schema({
+const userSchema = new Schema({
 
-    name: { type: String, request: true },
-    email: { type: String, request: true, unique: true },
+    name: {
+        type: String,
+        
+    },
+    email: {
+        type: String,
+        require: true,
+        default: true
+        
+    },
+  
+    password: {
+        type: String,
+        
+    },
+    role: {
+        type: String,
+        default: "user"
+        
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
+});
 
-    avatar: { type: String, default: 'avatar.png' },
-    password: { type: String },
-
-    role: { type: String, default: 'user' },
-    createdAt: Date,
-})
-
-module.exports = model('user', mySchema);
+module.exports = model('user', userSchema);

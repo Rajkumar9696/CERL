@@ -1,19 +1,31 @@
-const {Schema, model} = require('../connection');
+const { Schema, model } = require('../connection');
 
-const mySchema = new Schema({
-   
-  name: {type: String, request: true},
-    industry:{type:String},
-    email: {type: String, request: true, unique: true},
-    website:{type:String},
-    // avatar: {type: String, default: 'avatar_placeholder.png'},
-    password: {type:String},
+const companySchema = new Schema({
+  name: {
+    type: String,
+    required: [true, 'Name is required'],
     
-  
-    createdAt:{
-        type:Date,
-        default: Date.now()
-    }
-})
+  },
+  industry: {
+    type: String,
+    
+  },
+  email: {
+    type: String,
+    
+  },
+  website: {
+    type: String,
+   
+  },
+  password: {
+    type: String,
+   
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+});
 
-module.exports = model ('company', mySchema);
+module.exports = model('Company', companySchema);

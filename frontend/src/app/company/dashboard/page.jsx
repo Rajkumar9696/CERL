@@ -1,23 +1,44 @@
-import React from 'react'
+'use client';
+import React, { useEffect, useState } from 'react'
 
 const Dashboard = () => {
+
+  const [interview, setInterview] = useState([]);
+
+  const fetchinterview = async() => {
+    const res = await fetch("http://localhost:5000/interview/getall")
+    console.log(res.status);
+    const data = await res.json();
+    console.log(data);
+    setInterview(data);
+  }
+
+  useEffect(() => {
+    fetchinterview()
+  },[])
+
   return (
     <div className=''>
-      <div className='' >
-        <iframe
-          style={{
-            background: "#FFFFFF",
-            border: "none",
-            borderRadius: 2,
-            boxShadow: "0 2px 10px 0 rgba(70, 76, 79, .2)",
 
-          }}
-          width={640}
-          height={480}
-          src="https://charts.mongodb.com/charts-project-0-thfyggk/embed/charts?id=6640872e-dc7a-47ad-8ab9-85bccaa20f5a&maxDataAge=3600&theme=light&autoRefresh=true"
-        />
-
+           <div className="container">
+            <div className="grid grid-cols-4 gap-4">
+      {
+        interview.map((int) => {
+          return(
+              <div className='col-span-2'>
+                <h1>{int.companyName}</h1>
+                <h1>{int.fname}</h1>
+                <h1>{int.lname}</h1>
+                <h1>{int.date}</h1>
+                <h1>{int.timing}</h1>
+                <a  href={int.link}>{int.link}</a>
+              </div>
+          )
+        })
+      }
       </div>
+     </div>
+     
     </div>
 
   )

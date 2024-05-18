@@ -11,6 +11,7 @@ const cors = require("cors")
  const UtilRouter = require("./router/utilRouter")
  const ContactRouter = require("./router/contactRouter")
  const FeedbackRouter = require("./router/feedbackRouter")
+ const InterviewRouter = require("./router/interviewRouter")
 
 
  app.use(express.json());
@@ -24,6 +25,7 @@ const cors = require("cors")
  app.use("/util", UtilRouter);
  app.use("/contact", ContactRouter);
  app.use("/feedback", FeedbackRouter);
+ app.use("/interview", InterviewRouter);
 
 
  app.listen(port,() => {
