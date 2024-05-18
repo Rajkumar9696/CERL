@@ -54,11 +54,7 @@ const About = () => {
                 About Us
               </h2>
               <p className="mt-4 text-gray-600 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros
-                at lacus feugiat hendrerit sed ut tortor. Suspendisse et magna quis
-                elit efficitur consequat. Mauris eleifend velit a pretium iaculis.
-                Donec sagittis velit et magna euismod, vel aliquet nulla malesuada.
-                Nunc pharetra massa lectus, a fermentum arcu volutpat vel.
+              Corporate Employee Recruitment Leagues is an innovative project designed to streamline and enhance the recruitment process for corporate organizations. It leverages gamification to create competitive leagues among potential candidates, evaluating their skills through various challenges and assessments. This approach not only identifies top talent efficiently but also engages candidates in a dynamic and enjoyable manner. By incorporating real-time analytics and performance metrics, it ensures a data-driven selection process. The platform fosters a fair and transparent recruitment environment, benefiting both employers and job seekers. Ultimately, it aims to revolutionize traditional hiring methods, making them more effective and engaging.
               </p>
               <div className="mt-8">
                 <a href="#" className="text-blue-500 hover:text-blue-600 font-medium">
