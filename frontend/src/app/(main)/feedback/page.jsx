@@ -3,13 +3,27 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { enqueueSnackbar } from 'notistack';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactStars from "react-rating-stars-component";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
+
 
 const Feedback = () => {
-  const router = useRouter();
+
   const [rating, setRating] = useState(0);
+  const [feedbacklist, setFeedbackList] = useState([]);
+
+  const fetchfeedback = async() => {
+    const res = await fetch("http://localhost:5000/feedback/getall")
+    console.log(res.status);
+    const data = await res.json()
+    console.log(data);
+    setFeedbackList(data);
+
+  }
+  useEffect(() => {
+  fetchfeedback()
+  },[])
 
   const feedbackForm = useFormik({
     initialValues: {
@@ -31,17 +45,17 @@ const Feedback = () => {
           'Content-Type': 'application/json'
         }
       })
-      .then(response => {
-        if (response.status === 200) {
-          enqueueSnackbar('Feedback added successfully', { variant: 'success' });
-          router.push("/");
-        } else {
+        .then(response => {
+          if (response.status === 200) {
+            enqueueSnackbar('Feedback added successfully', { variant: 'success' });
+
+          } else {
+            enqueueSnackbar('Something went wrong', { variant: 'error' });
+          }
+        })
+        .catch(() => {
           enqueueSnackbar('Something went wrong', { variant: 'error' });
-        }
-      })
-      .catch(() => {
-        enqueueSnackbar('Something went wrong', { variant: 'error' });
-      });
+        });
     }
   });
 
@@ -122,6 +136,45 @@ const Feedback = () => {
           </form>
         </div>
       </section>
+
+      <div className="bg-white py-6 sm:py-8 lg:py-12">
+        <div className="mx-auto max-w-screen-md px-4 md:px-8">
+          <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">
+            Customer Reviews
+          </h2>
+
+         {
+          feedbacklist.map((feed) => {
+            return(
+
+          <div className="divide-y">
+          
+            <div className="flex flex-col gap-3 py-4 md:py-8">
+              <div>
+                <span className="block text-sm font-bold">{feed.name}</span>
+                <span className="block text-sm text-gray-500">{feed.email}</span>
+                <ReactStars 
+                count={feed.rating}
+                size={30}
+                color={"#ffd700"}
+                />
+              </div>
+              {/* stars - start */}
+              
+              {/* stars - end */}
+              <p className="text-gray-600">
+               {feed.feedback}
+              </p>
+            </div>
+           
+
+          </div>
+            )
+          })
+         }
+        </div>
+      </div>
+
     </div>
   );
 };
