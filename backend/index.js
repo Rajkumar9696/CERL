@@ -27,7 +27,7 @@ const cors = require("cors")
  app.use("/contact", ContactRouter);
  app.use("/feedback", FeedbackRouter);
  app.use("/interview", InterviewRouter);
- app.use("/feedback", ApplyRouter);
+ app.use("/apply", ApplyRouter);
 
 
  app.listen(port,() => {

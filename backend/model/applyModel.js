@@ -8,8 +8,7 @@ const applyformSchema = new Schema({
     },
     email: {
         type: String,
-        require: true,
-        default: true
+       
         
     },
   
@@ -18,13 +17,13 @@ const applyformSchema = new Schema({
         
     },
     phonenumber: {
-        type: String,
-        default: "user"
+        type: Number,
+        
         
     },
     fileUpload: {
         type: String,
-        default: ture
+        
     },
 });
 
