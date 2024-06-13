@@ -35,7 +35,7 @@ const Managevacancy = () => {
 
     const displayVacancy = () => {
         return (
-            <table className="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
+            <table className="min-w-full divide-y divide-gray-200 dark:divide-neutral-700 scroll-ml-6">
                 <thead>
                     <tr>
                         <th
@@ -62,12 +62,12 @@ const Managevacancy = () => {
                         >
                             Experience
                         </th>
-                        <th
+                        {/* <th
                             scope="col"
                             className="px-6 py-3 text-start text-xs font-large text-gray-500 uppercase dark:text-neutral-500"
                         >
                             Employement Type
-                        </th>
+                        </th> */}
                         <th
                             scope="col"
                             className="px-6 py-3 text-end text-xs font-large text-gray-500 uppercase dark:text-neutral-500"
@@ -93,16 +93,16 @@ const Managevacancy = () => {
                                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                                         {vacancy.experience}
                                     </td>
-                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    {/* <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                                         {vacancy.employmentType}
-                                    </td>
+                                    </td> */}
                                     <td className="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
-                                        <button
+                                        {/* <button
                                             type="button"
                                             className="me-3  inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-blue-600 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-400"
                                         >
                                             <MdModeEditOutline className='size-5' />
-                                        </button>
+                                        </button> */}
                                         <button
                                             onClick={e => deletevacancy(vacancy._id)}
                                             type="button"
@@ -126,8 +126,8 @@ const Managevacancy = () => {
         <div>
             <div className="flex flex-col">
                 <div className="-m-1.5 overflow-x-auto">
-                    <div className="p-1.5 min-w-full inline-block align-middle">
-                        <div className="overflow-hidden">
+                    <div className="p-1.5 min-w-full inline-block align-middle ">
+                        <div className="">
                             {
                                 displayVacancy()
                             }
